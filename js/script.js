@@ -10,7 +10,7 @@ const againButton = document.querySelector (".play-again"); //button to play aga
 const simonImage = document.querySelector(".simon"); //image of simon
 const secretMessage = document.querySelector(".secret-message");//secret message paragraph
 const secretPrompt = document.querySelector(".secret");//prompt to keep playing
-let word = "magnolia"; //My test words
+let word = "magnolia"; //My test word
 let wordArray = ["you", "are", "special", "to", "me"];
 let guessedLetters = [];
 let remainingGuesses = 8;
@@ -99,8 +99,6 @@ const updateWord = function (guessedLetters) {
     }
     wordProgress.innerText = revealWord.join("");
     win();
-    
-    
 };
 
 //console.log(updateWord());
@@ -147,7 +145,7 @@ const lastWordRestart = function () {
         secretMessage.classList.remove("hide");
         secretPrompt.classList.add("hide");
         againButton.innerText = "Play again";
-        wordArray = ["you", "are"];
+        wordArray = ["you", "are", "special", "to", "me"];
     }
 };
 
