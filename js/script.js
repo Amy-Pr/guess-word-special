@@ -113,7 +113,7 @@ const guessCount = function (guess) {
             
         };
         if (remainingGuesses === 0) {
-            message.innerText = `No more guesses! The word is ${pulledWord}. Keep playing.`;
+            message.innerText = `No more guesses! The word is ${pulledWord}.`;
             simonImage.innerHTML = "<img src='img/sad-simon.jpg'/>";
             startOver();
             lastWordRestart();
